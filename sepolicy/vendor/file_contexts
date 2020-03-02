@@ -11,6 +11,9 @@
 # Data files
 /data/per_boot(/.*)?                                                    u:object_r:per_boot_file:s0
 
+# Device nodes
+/dev/stune(/.*)?	                                                u:object_r:cgroup:s0
+
 # Display
 /vendor/bin/hw/vendor\.xiaomi\.hardware\.displayfeature@1\.0-service                                    u:object_r:hal_displayfeature_default_exec:s0
 /vendor/bin/displayfeature                                                                              u:object_r:hal_displayfeature_default_exec:s0
