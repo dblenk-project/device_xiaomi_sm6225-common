@@ -204,6 +204,10 @@ PRODUCT_PACKAGES += \
     libstagefrighthw_foundation \
     libstagefright_omx.vendor
 
+# Net
+PRODUCT_PACKAGES += \
+    netutils-wrapper-1.0
+
 # Partitions
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
