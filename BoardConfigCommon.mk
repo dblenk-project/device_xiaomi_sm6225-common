@@ -172,6 +172,7 @@ BOARD_USES_QCOM_HARDWARE := true
 TARGET_BOARD_PLATFORM := bengal
 
 # Power
+TARGET_TAP_TO_WAKE_NODE := "/proc/tp_gesture"
 TARGET_POWERHAL_MODE_EXT := $(COMMON_PATH)/power/power-mode.cpp
 
 # Properties
