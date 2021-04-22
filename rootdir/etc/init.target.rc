@@ -132,6 +132,10 @@ on charger
     setprop sys.usb.configfs 1
     start mi_thermald
 
+    # Restrict permissions to socket file
+    # to hide Magisk & co.
+    chmod 440 /proc/net/unix
+
 service vendor.pd_mapper /vendor/bin/pd-mapper
     class core
     user system
