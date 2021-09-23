@@ -283,7 +283,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.lights-service.xiaomi_bengal
+    android.hardware.light-service.xiaomi
 
 # Media
 PRODUCT_PACKAGES += \
@@ -404,7 +404,8 @@ PRODUCT_PACKAGES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    hardware/qcom-caf/bootctrl
+    hardware/qcom-caf/bootctrl \
+    hardware/xiaomi
 
 # Update engine
 PRODUCT_PACKAGES += \
