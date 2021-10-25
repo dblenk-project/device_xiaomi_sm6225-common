@@ -265,7 +265,7 @@ PRODUCT_COPY_FILES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.lights-service
+    android.hardware.lights-service.xiaomi_bengal
 
 # Media
 PRODUCT_PACKAGES += \
