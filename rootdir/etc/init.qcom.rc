@@ -103,7 +103,7 @@ on early-boot
     chown system system /mnt/vendor/persist/data/pfm/licenses/store_4
     chmod 0664 /mnt/vendor/persist/data/pfm/licenses/store_4
 
-    setprop init.svc.console stopped
+    stop console
 
 on boot
     chown bluetooth bluetooth /sys/module/bluetooth_power/parameters/power
