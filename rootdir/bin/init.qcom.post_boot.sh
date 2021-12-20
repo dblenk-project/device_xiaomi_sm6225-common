@@ -4311,8 +4311,6 @@ case "$target" in
 
             echo "0:1190000" > /sys/devices/system/cpu/cpu_boost/input_boost_freq
             echo 120 > /sys/devices/system/cpu/cpu_boost/input_boost_ms
-	    echo "0:1516800 1:0 2:0 3:0 4:1766400 5:0 6:0 7:0" > /sys/devices/system/cpu/cpu_boost/powerkey_input_boost_freq
-	    echo 400 > /sys/devices/system/cpu/cpu_boost/powerkey_input_boost_ms
 
 	    echo 1 > /proc/sys/kernel/sched_walt_rotate_big_tasks
 
