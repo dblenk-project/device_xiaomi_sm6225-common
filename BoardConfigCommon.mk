@@ -101,5 +101,8 @@ TARGET_COPY_OUT_VENDOR := vendor
 BOARD_USES_QCOM_HARDWARE := true
 TARGET_BOARD_PLATFORM := bengal
 
+# Sepolicy
+include device/qcom/sepolicy_vndr/SEPolicy.mk
+
 # Inherit the proprietary files
 include vendor/xiaomi/sm6225-common/BoardConfigVendor.mk
