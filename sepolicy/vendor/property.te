@@ -1,5 +1,8 @@
 # Device
 vendor_internal_prop(vendor_device_prop)
 
+# Displayfeature
+vendor_internal_prop(vendor_displayfeature_prop)
+
 # Thermal
 vendor_internal_prop(vendor_thermal_normal_prop)
