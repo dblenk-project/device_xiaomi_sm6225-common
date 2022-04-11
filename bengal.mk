@@ -126,6 +126,9 @@ PRODUCT_PACKAGES += \
     libqcomvoiceprocessing \
     libtinycompress
 
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.audiohalext@1.0.vendor
+
 BOARD_SUPPORTS_OPENSOURCE_STHAL := true
 BOARD_SUPPORTS_SOUND_TRIGGER := true
 TARGET_USES_AOSP_FOR_AUDIO := true
