@@ -190,15 +190,6 @@ on property:init.svc.vendor.per_mgr=running
 on property:sys.shutdown.requested=*
     stop vendor.per_proxy
 
-#on property:vold.decrypt=trigger_restart_framework
-#   start vendor.cnss_diag
-
-service vendor.cnss_diag /system/vendor/bin/cnss_diag -q -f -t HELIUM
-    class main
-    user system
-    group system wifi inet sdcard_rw media_rw diag
-    disabled
-
 service dcvs-sh /vendor/bin/init.qti.dcvs.sh
     class late_start
     user root
@@ -293,7 +284,6 @@ service sniffer /system/vendor/bin/tcpdump -i wlan0 -w /data/vendor/wlan_logs/sn
     disabled
     oneshot
 on property:sys.user.0.ce_available=true
-    start vendor.cnss_diag
     start vendor.tcpdump
 
 service startpktlog /system/vendor/bin/iwpriv wlan0 pktlog 2
