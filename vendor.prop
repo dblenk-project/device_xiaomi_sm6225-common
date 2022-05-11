@@ -105,6 +105,9 @@ vendor.qcom.bluetooth.soc=cherokee
 ro.crypto.allow_encrypt_override=true
 ro.crypto.volume.filenames_mode=aes-256-cts
 
+# Dalvik
+dalvik.vm.systemuicompilerfilter=speed
+
 # Display calib
 ro.vendor.display.sensortype=2
 ro.vendor.display.svi=1
