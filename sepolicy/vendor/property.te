@@ -1,3 +1,6 @@
+# Bluetooth
+vendor_internal_prop(vendor_btmac_prop)
+
 # Device
 vendor_internal_prop(vendor_device_prop)
 
@@ -6,3 +9,6 @@ vendor_internal_prop(vendor_displayfeature_prop)
 
 # Thermal
 vendor_internal_prop(vendor_thermal_normal_prop)
+
+# WiFi
+vendor_internal_prop(vendor_wifimac_prop)
