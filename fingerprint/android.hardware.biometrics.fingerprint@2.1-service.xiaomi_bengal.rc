@@ -9,6 +9,7 @@ service vendor.fps_hal /vendor/bin/hw/android.hardware.biometrics.fingerprint@2.
 on post-fs-data
     mkdir /data/vendor/fpc 0777 system system
     mkdir /data/vendor/goodix 0777 system system
+    mkdir /data/vendor/silead 0777 system system
 
 on boot
     chown system system /sys/bus/platform/devices/soc:fpc1020/irq
@@ -21,6 +22,7 @@ on boot
     chmod 0660 /sys/bus/platform/devices/soc:fpc1020/compatible_all
 
     chmod 0777 /dev/goodix_fp
+    chmod 0777 /dev/silead_fp
 
 on property:vendor.fps_hal.restartimes=max
     stop vendor.fps_hal
