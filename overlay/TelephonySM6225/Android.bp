@@ -1,0 +1,6 @@
+runtime_resource_overlay {
+    name: "TelephonySM6225",
+    theme: "TelephonySM6225",
+    sdk_version: "current",
+    vendor: true,
+}

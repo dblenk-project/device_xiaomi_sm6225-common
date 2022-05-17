@@ -1,0 +1,6 @@
+runtime_resource_overlay {
+    name: "SystemUISM6225",
+    theme: "SystemUISM6225",
+    sdk_version: "current",
+    vendor: true,
+}

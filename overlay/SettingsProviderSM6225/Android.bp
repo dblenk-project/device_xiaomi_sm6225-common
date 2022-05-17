@@ -1,0 +1,6 @@
+runtime_resource_overlay {
+    name: "SettingsProviderSM6225",
+    theme: "SettingsProviderSM6225",
+    sdk_version: "current",
+    vendor: true,
+}

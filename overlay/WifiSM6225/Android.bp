@@ -1,0 +1,6 @@
+runtime_resource_overlay {
+    name: "WifiSM6225",
+    theme: "WifiSM6225",
+    sdk_version: "current",
+    vendor: true
+}

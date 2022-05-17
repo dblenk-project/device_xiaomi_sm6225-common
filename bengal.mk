@@ -333,11 +333,14 @@ PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.3.vendor
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-aosp
-
-PRODUCT_ENFORCE_RRO_TARGETS := *
+PRODUCT_PACKAGES += \
+    CarrierConfigSM6225 \
+    FrameworksSM6225 \
+    SettingsProviderSM6225 \
+    SettingsSM6225 \
+    SystemUISM6225 \
+    TelephonySM6225 \
+    WifiSM6225
 
 # Partitions
 PRODUCT_BUILD_SUPER_PARTITION := false
@@ -463,7 +466,6 @@ PRODUCT_PACKAGES += \
     libwifi-hal-qcom \
     vendor.qti.hardware.wifi.hostapd@1.2.vendor \
     vendor.qti.hardware.wifi.supplicant@2.1.vendor \
-    WifiResCommon \
     wpa_supplicant \
     wpa_supplicant.conf
 

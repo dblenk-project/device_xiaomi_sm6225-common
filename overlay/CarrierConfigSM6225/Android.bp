@@ -1,0 +1,6 @@
+runtime_resource_overlay {
+    name: "CarrierConfigSM6225",
+    theme: "CarrierConfigSM6225",
+    sdk_version: "current",
+    vendor: true,
+}
