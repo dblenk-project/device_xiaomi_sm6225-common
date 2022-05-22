@@ -444,7 +444,7 @@ PRODUCT_PACKAGES += \
 
 # USB
 PRODUCT_PACKAGES += \
-    android.hardware.usb@1.3-service-xiaomi_bengal \
+    android.hardware.usb@1.2-service-xiaomi_bengal \
     android.hardware.usb.gadget@1.0-service-xiaomi_bengal
 
 # Vendor service manager
