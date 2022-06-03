@@ -191,6 +191,10 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.mapper@4.0.vendor \
     vendor.qti.hardware.display.mapperextensions@1.1.vendor
 
+# DPM
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    persist.vendor.dpm.feature=11
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.3-service.clearkey
