@@ -143,16 +143,6 @@
         <fqname>@1.1::IRadioConfig/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>android.hardware.renderscript</name>
-        <transport arch="32+64">passthrough</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IDevice</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IDevice/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>android.hardware.soundtrigger</name>
         <transport>hwbinder</transport>
         <version>2.3</version>
@@ -308,16 +298,6 @@
         <fqname>@2.0::IBTConfigStore/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>vendor.qti.hardware.cacert</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IService</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IService/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>vendor.qti.hardware.camera.postproc</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -370,26 +350,6 @@
         <fqname>@1.0::IDspService/dspservice</fqname>
     </hal>
     <hal format="hidl">
-        <name>vendor.qti.hardware.embmssl</name>
-        <transport>hwbinder</transport>
-        <version>1.1</version>
-        <interface>
-            <name>IEmbms</name>
-            <instance>embmsslServer0</instance>
-        </interface>
-        <fqname>@1.1::IEmbms/embmsslServer0</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.qti.hardware.factory</name>
-        <transport>hwbinder</transport>
-        <version>1.1</version>
-        <interface>
-            <name>IFactory</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.1::IFactory/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>vendor.qti.hardware.fm</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -398,16 +358,6 @@
             <instance>default</instance>
         </interface>
         <fqname>@1.0::IFmHci/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.qti.hardware.fstman</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IFstManager</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IFstManager/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.iop</name>
@@ -603,16 +553,6 @@
         <fqname>@1.0::ITuiComm/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>vendor.qti.hardware.wifi.wifilearner</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IWifiStats</name>
-            <instance>wifiStats</instance>
-        </interface>
-        <fqname>@1.0::IWifiStats/wifiStats</fqname>
-    </hal>
-    <hal format="hidl">
         <name>vendor.qti.hardware.wifidisplaysession</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -696,15 +636,5 @@
             <instance>default</instance>
         </interface>
         <fqname>@1.0::IXiaomiFingerprint/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.xiaomi.hw.touchfeature</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ITouchFeature</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::ITouchFeature/default</fqname>
     </hal>
 </manifest>
