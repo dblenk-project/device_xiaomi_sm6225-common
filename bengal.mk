@@ -454,6 +454,10 @@ PRODUCT_COPY_FILES += \
 # VNDK
 PRODUCT_EXTRA_VNDK_VERSIONS := 30
 
+# Vulkan
+PRODUCT_PACKAGES += \
+    libvulkan
+
 # WiFi
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
