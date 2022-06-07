@@ -292,19 +292,19 @@ on  property:vendor.elliptic.sensor.test=1
 on  property:vendor.elliptic.sensor.test=0
     stop ellipticSensorTest
 
-service displayfeature /vendor/bin/displayfeature
+service vendor.displayfeature /vendor/bin/displayfeature
     class late_start
     user root
     group root
 
 on property:init.svc.surfaceflinger=stopped
-    stop displayfeature
+    stop vendor.displayfeature
 
 on property:init.svc.surfaceflinger=running
-    start displayfeature
+    start vendor.displayfeature
 
 on property:init.svc.surfaceflinger=restarting
-    stop displayfeature
+    stop vendor.displayfeature
 
 #Add tp pocket mode
 on property:odm.pocket.mode.keygurad.locked=1
