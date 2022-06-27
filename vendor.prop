@@ -176,6 +176,9 @@ debug.stagefright.ccodec=1
 debug.stagefright.omx_default_rank=0
 debug.stagefright.omx_default_rank.sw-audio=1
 
+# Netflix Properties
+vendor.netflix.bsp_rev=Q6115-31409-1
+
 # NFC
 ro.vendor.se.type=HCE,UICC
 
