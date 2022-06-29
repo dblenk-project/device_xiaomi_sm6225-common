@@ -144,6 +144,10 @@ PRODUCT_PACKAGES += \
     FM2 \
     qcom.fmradio
 
+# Gatekeeper
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0.vendor
+
 # GNSS
 PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1-service-qti
