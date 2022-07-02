@@ -56,7 +56,7 @@
     </hal>
     <hal format="hidl" optional="true">
         <name>android.hardware.nfc</name>
-        <version>1.0</version>
+        <version>1.2</version>
         <interface>
             <name>INfc</name>
             <instance>default</instance>
@@ -217,6 +217,38 @@
         <version>1.0</version>
         <interface>
             <name>INxpNfcLegacy</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.nxp.eventprocessor</name>
+        <version>1.0</version>
+        <interface>
+            <name>INxpEseEvtProcessor</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.nxp.nxpese</name>
+        <version>1.0</version>
+        <interface>
+            <name>INxpEse</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.nxp.nxpnfc</name>
+        <version>2.0</version>
+        <interface>
+            <name>INxpNfc</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.nxp.nxpwiredse</name>
+        <version>1.0</version>
+        <interface>
+            <name>INxpWiredSe</name>
             <instance>default</instance>
         </interface>
     </hal>
@@ -761,6 +793,50 @@
         <version>1.0-1</version>
         <interface>
             <name>IMlipayService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.silead.hardware.fingerprintext</name>
+        <version>1.0</version>
+        <interface>
+            <name>ISileadFingerprint</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.xiaomi.hardware.mtdservice</name>
+        <version>1.0-2</version>
+        <interface>
+            <name>IMTService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>com.fingerprints.extension</name>
+        <version>1.0</version>
+        <interface>
+            <name>IFingerprintEngineering</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IFingerprintNavigation</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IFingerprintSensorTest</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.goodix.hardware.biometrics.fingerprint</name>
+        <version>2.1</version>
+        <interface>
+            <name>IGoodixFingerprintDaemon</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IGoodixFingerprintDaemonExt</name>
             <instance>default</instance>
         </interface>
     </hal>
