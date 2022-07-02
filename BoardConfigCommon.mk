@@ -119,6 +119,7 @@ BOARD_KERNEL_CMDLINE += \
     service_locator.enable=1 \
     swiotlb=2048
 
+TARGET_KERNEL_CONFIG := vendor/bengal_defconfig
 TARGET_KERNEL_HEADERS := kernel/xiaomi/sm6225-common
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sm6225-common
 
