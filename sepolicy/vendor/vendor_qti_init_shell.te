@@ -3,7 +3,7 @@ allow vendor_qti_init_shell configfs:file create_file_perms;
 allow vendor_qti_init_shell ctl_stop_prop:property_service set;
 allow vendor_qti_init_shell proc_page_cluster:file rw_file_perms;
 allow vendor_qti_init_shell sysfs_wakeup:file setattr;
-allow vendor_qti_init_shell sysfs:file setattr;
+allow vendor_qti_init_shell sysfs:file { setattr write };
 allow vendor_qti_init_shell vendor_qti_init_shell:perf_event cpu;
 
 # allow init.mi.btmac.sh to read hex-encoded mac address and set it
