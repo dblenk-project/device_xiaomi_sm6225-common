@@ -73,9 +73,6 @@ on post-fs-data
      chmod 0644 /mnt/vendor/persist/camera/rear_dc_cal_wd.bin
      chmod 0644 /mnt/vendor/persist/camera/rear_dc_cal_wu.bin
 
-    # Create charger logger
-    mkdir /data/vendor/charge_logger system
-
     # M376 add for saving files of TP selftest
     mkdir /data/vendor/touchpad
     chown system system /data/vendor/touchpad
@@ -126,9 +123,6 @@ on boot
 on boot && property:persist.vendor.usb.controller.default=*
     setprop vendor.usb.controller ${persist.vendor.usb.controller.default}
 
-on property:vendor.usb.controller=*
-    setprop sys.usb.controller ${vendor.usb.controller}
-
 on charger
     start vendor.power_off_alarm
     setprop vendor.usb.controller 4e00000.dwc3
@@ -154,17 +148,6 @@ service mi_thermald /system/vendor/bin/mi_thermald
     user root
     group system
     seclabel u:r:mi_thermald:s0
-
-# add charge_logger service for dump charge message
-service charge_logger /vendor/bin/charge_logger
-   class last_start
-   user system
-   group system system wakelock
-   disabled
-   oneshot
-on property:sys.boot_completed=1
-    mkdir /data/vendor/charge_logger 0771 system system
-    start charge_logger
 
 service vendor.per_proxy /vendor/bin/pm-proxy
     class core
@@ -203,41 +186,8 @@ service dcvs-sh /vendor/bin/init.qti.dcvs.sh
 on property:vendor.dcvs.prop=1
    start dcvs-sh
 
-# BSP.AUDIO - 2021.09.17 - modify for add misound
-service audioshell_service /vendor/bin/audioshell_service
-    oneshot
-    disabled
-on property:ro.vendor.miui.region=*
-    start audioshell_service
-# end modify
-
-    # add for mishow
     chmod 0777 /sys/class/power_supply/battery/input_suspend
     chown system system /sys/class/power_supply/battery/input_suspend
-
-# Ultrasound SQT test
-service ellipticEngineRecord /system/bin/elliptic_engine_record -s /dev/elliptic1:device -f binpayload -p /sdcard/elliptic/
-    class main
-    user root
-    oneshot
-    disabled
-
-on  property:vendor.elliptic.engine.record=1
-    start ellipticEngineRecord
-on  property:vendor.elliptic.engine.record=0
-    stop ellipticEngineRecord
-
-service ellipticSensorTest /system/bin/elliptic_sensor_test
-    class main
-    user root
-    oneshot
-    disabled
-
-on  property:vendor.elliptic.sensor.test=1
-    start ellipticSensorTest
-
-on  property:vendor.elliptic.sensor.test=0
-    stop ellipticSensorTest
 
 service vendor.displayfeature /vendor/bin/displayfeature
     class late_start
@@ -252,57 +202,3 @@ on property:init.svc.surfaceflinger=running
 
 on property:init.svc.surfaceflinger=restarting
     stop vendor.displayfeature
-
-#Add tp pocket mode
-on property:odm.pocket.mode.keygurad.locked=1
-write /proc/tp_palm 1
-on property:odm.pocket.mode.keygurad.locked=0
-write /proc/tp_palm 0
-
-# 2021.09.13 wangxiang4 add start for tools of bt RF test and start by dial *#*#2008#*#*
-service wdsdaemon /vendor/bin/wdsdaemon -su
-    user root
-    group root
-    oneshot
-    disabled
-
-on property:odm.start_wdsdaemon=1
-    start wdsdaemon
-
-on property:odm.start_wdsdaemon=0
-    stop wdsdaemon
-
-#add for wifi 9434 log
-service vendor.tcpdump /system/vendor/bin/tcpdump -i any -W 2 -C 2 -s 134 -w /data/vendor/wlan_logs/tcpdump.pcap
-    class main
-    user root
-    group root wifi inet sdcard_rw media_rw diag
-    disabled
-    oneshot
-
-service sniffer /system/vendor/bin/tcpdump -i wlan0 -w /data/vendor/wlan_logs/sniffer.pcap
-    class main
-    user root
-    group root
-    disabled
-    oneshot
-on property:sys.user.0.ce_available=true
-    start vendor.tcpdump
-
-service startpktlog /system/vendor/bin/iwpriv wlan0 pktlog 2
-    class main
-    user root
-    group root
-    disabled
-    oneshot
-
-service stoppktlog /system/vendor/bin/iwpriv wlan0 pktlog 0
-    class main
-    user root
-    group root
-    disabled
-    oneshot
-#add end
-
-on property:ro.boot.multisim_config=*
-    setprop persist.radio.multisim.config ${ro.boot.multisim_config}
