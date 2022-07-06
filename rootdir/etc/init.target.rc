@@ -26,7 +26,7 @@
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 #
-import init.mishow.ctl.rc
+
 on early-init
     write /proc/sys/kernel/sched_boost 1
 
