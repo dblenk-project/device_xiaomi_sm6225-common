@@ -127,7 +127,6 @@ debug.sf.high_fps_early_phase_offset_ns=-5000000
 debug.sf.high_fps_late_app_phase_offset_ns=1000000
 debug.sf.high_fps_late_sf_phase_offset_ns=-5000000
 debug.sf.hw=0
-persist.demo.hdmirotationlock=false
 persist.sys.sf.color_mode=9
 persist.sys.sf.color_saturation=1.0
 persist.sys.sf.native_mode=2
@@ -182,9 +181,6 @@ vendor.netflix.bsp_rev=Q6115-31409-1
 # NFC
 ro.vendor.se.type=HCE,UICC
 
-# NTP
-persist.backup.ntpServer=0.pool.ntp.org
-
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
 ro.vendor.perf-hal.ver=2.2
@@ -204,7 +200,6 @@ persist.vendor.radio.rat_on=combine
 persist.vendor.radio.sib16_support=1
 persist.vendor.radio.snapshot_enabled=1
 persist.vendor.radio.snapshot_timer=5
-rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
 ro.telephony.default_network=22,20
 telephony.lteOnCdmaDevice=1
 
@@ -221,16 +216,9 @@ persist.vendor.sensors.support_direct_channel=false
 # Time
 sys.vendor.shutdown.waittime=500
 
-# Time-services
-persist.timed.enable=true
-
 # USB
 vendor.usb.diag.func.name=diag
 vendor.usb.use_ffs_mtp=0
-
-# WFD settings
-persist.debug.wfd.enable=1
-persist.sys.wfd.virtual=0
 
 # Wi-Fi
 wifi.aware.interface=wifi-aware0

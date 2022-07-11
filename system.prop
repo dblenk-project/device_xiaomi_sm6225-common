@@ -26,6 +26,9 @@ pm.dexopt.first-boot=quicken
 # Fwk detect
 ro.vendor.qti.va_aosp.support=1
 
+# Graphics
+persist.demo.hdmirotationlock=false
+
 # IMS
 persist.dbg.volte_avail_ovr=1
 persist.dbg.wfc_avail_ovr=1
@@ -51,9 +54,20 @@ ro.vendor.use_data_netmgrd=true
 # NFC
 ro.nfc.port=I2C
 
+# NTP
+persist.backup.ntpServer=0.pool.ntp.org
+
 # RIL
 DEVICE_PROVISIONED=1
 ril.subscription.types=NV,RUIM
+rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
+
+# Time-services
+persist.timed.enable=true
+
+# WFD settings
+persist.debug.wfd.enable=1
+persist.sys.wfd.virtual=0
 
 # Zygote
 persist.device_config.runtime_native.usap_pool_enabled=true
