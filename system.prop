@@ -23,6 +23,9 @@ pm.dexopt.bg-dexopt=speed-profile
 pm.dexopt.boot=verify
 pm.dexopt.first-boot=quicken
 
+# DPM
+persist.vendor.dpm.feature=1
+
 # Fwk detect
 ro.vendor.qti.va_aosp.support=1
 
@@ -64,6 +67,9 @@ rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
 
 # Time-services
 persist.timed.enable=true
+
+# USB
+persist.sys.usb.config=adb
 
 # WFD settings
 persist.debug.wfd.enable=1

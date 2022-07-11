@@ -112,7 +112,7 @@ vendor.display.svi.config=1
 vendor.display.svi.config_path=/vendor/etc/SVIConfig.xml
 
 # DPM
-persist.vendor.dpm.feature=1
+persist.vendor.dpm.feature=11
 persist.vendor.dpmhalservice.enable=1
 
 # FRP
