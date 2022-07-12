@@ -174,12 +174,6 @@ on property:init.svc.vendor.per_mgr=running
 on property:sys.shutdown.requested=*
     stop vendor.per_proxy
 
-service adsprpcd /vendor/bin/adsprpcd
-   class main
-   user media
-   group media
-   disabled
-
 service dcvs-sh /vendor/bin/init.qti.dcvs.sh
     class late_start
     user root
