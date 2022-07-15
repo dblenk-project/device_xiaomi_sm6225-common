@@ -1,3 +1,5 @@
+binder_call(system_app, storaged)
+
 dontaudit system_app {
   system_suspend_control_internal_service
   system_suspend_control_service
