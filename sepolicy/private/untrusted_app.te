@@ -1,0 +1,4 @@
+allow untrusted_app untrusted_app:udp_socket ioctl;
+
+dontaudit untrusted_app odsign_prop:file read;
+dontaudit untrusted_app system_file:file lock;
