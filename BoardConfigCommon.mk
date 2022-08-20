@@ -106,6 +106,7 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB)
 
 BOARD_KERNEL_CMDLINE += \
+    androidboot.fstab_suffix=qcom \
     androidboot.hardware=qcom \
     androidboot.memcg=1 \
     androidboot.usbcontroller=4e00000.dwc3 \
