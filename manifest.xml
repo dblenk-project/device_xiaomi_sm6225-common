@@ -63,8 +63,8 @@
         <transport>hwbinder</transport>
         <fqname>@1.2::ISap/slot1</fqname>
         <fqname>@1.2::ISap/slot2</fqname>
-        <fqname>@1.4::IRadio/slot1</fqname>
-        <fqname>@1.4::IRadio/slot2</fqname>
+        <fqname>@1.5::IRadio/slot1</fqname>
+        <fqname>@1.5::IRadio/slot2</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.radio.config</name>
@@ -182,6 +182,11 @@
         <fqname>@2.0::IIop/default</fqname>
     </hal>
     <hal format="hidl">
+        <name>vendor.qti.hardware.mwqemadapter</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IMwqemAdapter/MwqemAdapter</fqname>
+    </hal>
+    <hal format="hidl">
         <name>vendor.qti.hardware.perf</name>
         <transport>hwbinder</transport>
         <fqname>@2.2::IPerf/default</fqname>
@@ -235,8 +240,8 @@
     <hal format="hidl">
         <name>vendor.qti.hardware.radio.qtiradio</name>
         <transport>hwbinder</transport>
-        <fqname>@2.4::IQtiRadio/slot1</fqname>
-        <fqname>@2.4::IQtiRadio/slot2</fqname>
+        <fqname>@2.6::IQtiRadio/slot1</fqname>
+        <fqname>@2.6::IQtiRadio/slot2</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.radio.uim</name>

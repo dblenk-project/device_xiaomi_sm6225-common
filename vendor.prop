@@ -112,7 +112,6 @@ vendor.display.svi.config=1
 vendor.display.svi.config_path=/vendor/etc/SVIConfig.xml
 
 # DPM
-persist.vendor.dpm.feature=11
 persist.vendor.dpmhalservice.enable=1
 
 # FRP
@@ -145,7 +144,7 @@ vendor.display.disable_excl_rect_partial_fb=1
 vendor.display.disable_hw_recovery_dump=1
 vendor.display.disable_idle_time_hdr=1
 vendor.display.disable_idle_time_video=1
-vendor.display.disable_layer_stitch=1
+vendor.display.disable_layer_stitch=0
 vendor.display.disable_rotator_ubwc=1
 vendor.display.disable_rounded_corner_thread=1
 vendor.display.disable_scaler=0
@@ -188,6 +187,7 @@ persist.vendor.radio.apm_sim_not_pwdn=1
 persist.vendor.radio.atfwd.start=true
 persist.vendor.radio.custom_ecc=1
 persist.vendor.radio.data_con_rprt=1
+persist.vendor.radio.enable_temp_dds=true
 persist.vendor.radio.enableadvancedscan=true
 persist.vendor.radio.manual_nw_rej_ct=1
 persist.vendor.radio.mt_sms_ack=30
