@@ -132,9 +132,6 @@ on charger
     setprop sys.usb.configfs 1
     start mi_thermald
 
-    mkdir /data/vendor/charge_logger 0771 system system
-    start charge_logger
-
 service vendor.pd_mapper /vendor/bin/pd-mapper
     class core
     user system
