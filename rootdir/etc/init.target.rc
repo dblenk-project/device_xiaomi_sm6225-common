@@ -98,6 +98,10 @@ on boot
     chown system system /proc/tp_gesture
     chmod 0644 /proc/tp_gesture
 
+    # IR device
+    chown system system /dev/spidev0.1
+    chmod 0660 /dev/spidev0.1
+
    # USB controller configuration
     setprop vendor.usb.rndis.func.name "gsi"
     setprop vendor.usb.rmnet.func.name "gsi"
