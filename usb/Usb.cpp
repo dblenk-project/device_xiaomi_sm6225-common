@@ -103,17 +103,23 @@ static int32_t writeFile(const std::string &filename,
 
 std::string appendRoleNodeHelper(const std::string &portName,
                                  PortRoleType type) {
-  std::string node("/sys/class/typec/" + portName);
 
-  switch (type) {
-    case PortRoleType::DATA_ROLE:
-      return node + "/data_role";
-    case PortRoleType::POWER_ROLE:
-      return node + "/power_role";
-    case PortRoleType::MODE:
-      return node + "/port_type";
-    default:
-      return "";
+    if ((portName == "..") || (portName.find('/') != std::string::npos)) {
+       ALOGE("Fatal: invalid portName");
+       return "";
+    }
+
+    std::string node("/sys/class/typec/" + portName);
+
+    switch (type) {
+      case PortRoleType::DATA_ROLE:
+        return node + "/data_role";
+      case PortRoleType::POWER_ROLE:
+        return node + "/power_role";
+      case PortRoleType::MODE:
+        return node + "/port_type";
+      default:
+        return "";
   }
 }
 
