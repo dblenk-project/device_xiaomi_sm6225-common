@@ -23,6 +23,9 @@ AB_OTA_PARTITIONS += \
     vendor \
     vendor_boot
 
+# A/B ART
+BOARD_USES_SYSTEM_OTHER_ODEX := true
+
 # APEX
 DEXPREOPT_GENERATE_APEX_IMAGE := true
 
