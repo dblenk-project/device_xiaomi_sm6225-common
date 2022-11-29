@@ -169,6 +169,7 @@ TARGET_COPY_OUT_VENDOR := vendor
 # Platform
 BOARD_USES_QCOM_HARDWARE := true
 TARGET_BOARD_PLATFORM := bengal
+TARGET_HALS_PATH ?= hardware/qcom-caf/$(TARGET_BOARD_PLATFORM)
 
 # Power
 TARGET_TAP_TO_WAKE_NODE := "/proc/tp_gesture"
