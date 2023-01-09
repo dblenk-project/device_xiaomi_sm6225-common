@@ -124,6 +124,11 @@ ro.crypto.volume.filenames_mode=aes-256-cts
 # Dalvik
 dalvik.vm.systemuicompilerfilter=speed
 
+# Display
+ro.surface_flinger.set_display_power_timer_ms=1000
+ro.surface_flinger.set_idle_timer_ms=500
+ro.surface_flinger.set_touch_timer_ms=800
+
 # Display calib
 ro.vendor.display.sensortype=2
 ro.vendor.display.svi=1
