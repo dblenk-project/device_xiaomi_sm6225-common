@@ -186,17 +186,3 @@ on property:vendor.dcvs.prop=1
 
     chmod 0777 /sys/class/power_supply/battery/input_suspend
     chown system system /sys/class/power_supply/battery/input_suspend
-
-service vendor.displayfeature /vendor/bin/displayfeature
-    class late_start
-    user root
-    group root
-
-on property:init.svc.surfaceflinger=stopped
-    stop vendor.displayfeature
-
-on property:init.svc.surfaceflinger=running
-    start vendor.displayfeature
-
-on property:init.svc.surfaceflinger=restarting
-    stop vendor.displayfeature
