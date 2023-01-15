@@ -679,7 +679,7 @@ service profiler_daemon /system/bin/profiler_daemon
     group root
     disabled
 
-service vendor.charger /system/bin/chargeonlymode
+service charger /system/bin/chargeonlymode
     class charger
     user system
     group system graphics input
