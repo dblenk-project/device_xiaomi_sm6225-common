@@ -366,8 +366,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/qcom-caf/bootctrl \
-    hardware/xiaomi \
-    vendor/qcom/opensource/usb/etc
+    hardware/xiaomi
 
 # Update engine
 PRODUCT_PACKAGES += \
@@ -403,7 +402,8 @@ PRODUCT_COPY_FILES += \
 
 # USB
 PRODUCT_PACKAGES += \
-    android.hardware.usb@1.3-service-qti
+    android.hardware.usb@1.3-service-bengal \
+    android.hardware.usb.gadget@1.1-service-bengal
 
 PRODUCT_PACKAGES += \
     init.qcom.usb.rc \

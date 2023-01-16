@@ -237,7 +237,6 @@ persist.vendor.sensors.support_direct_channel=false
 sys.vendor.shutdown.waittime=500
 
 # USB
-vendor.usb.controller=4e00000.dwc3
 vendor.usb.diag.func.name=diag
 vendor.usb.dpl.inst.name=dpl
 vendor.usb.qdss.inst.name=qdss
