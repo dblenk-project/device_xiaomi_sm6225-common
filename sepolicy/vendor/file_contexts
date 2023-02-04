@@ -98,8 +98,5 @@
 /vendor/bin/hw/android\.hardware\.usb\@1\.[0-3]-service-xiaomi_bengal             u:object_r:vendor_hal_usb_qti_exec:s0
 /vendor/bin/hw/android\.hardware\.usb\.gadget\@1\.[0-2]-service-xiaomi_bengal     u:object_r:vendor_hal_usb_qti_exec:s0
 
-# Vibrator
-/vendor/bin/hw/vendor\.qti\.hardware\.vibrator\.service\.xiaomi_bengal		u:object_r:hal_vibrator_default_exec:s0
-
 # WiFi
 /data/vendor/mac_addr(/.*)?                                             u:object_r:vendor_wifi_vendor_data_file:s0
